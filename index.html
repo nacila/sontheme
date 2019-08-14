@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blou HTML Responsive Vcard Template">
+    <meta name="keywords" content="personal, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOU</title>
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+  <section class="home">
+      <nav>
+          <div class="left">
+              <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+          </div>
+          
+          <div class="right">
+            
+             <!-- mobile menu -->
+                <span class="navicon-homePage" onclick="openNav()">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </span>
+
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html">About</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                 <!--end - mobile menu -->
+              
+          </div>
+          
+      </nav>
+      
+      <div class="social">
+          <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+          </ul>
+      </div>
+      
+      
+               <!-- Hero -->
+               <div class="kapsayici">
+                <div id="intro-text" class="intro-text">
+                    <h1><span class="title">HELLO</span></h1>  
+                </div>
+                
+                <div class="box">
+                    <h4 class="reverse-btn">Wiew My Portfolio</h4>
+                    <h4 id="portfolio" class="reverse-display">Back To Home</h4>
+                    <button id="btn"><i class="fas fa-dot-circle"></i></button>
+                    
+                </div>
+                
+                <div class="man">
+                    <img src="img/a.png" alt="man">
+                </div> 
+                <div class="grid">
+                    <div class="fotos">
+                        <a href=""><div class="foto-wrapper first-foto">
+                            
+                        </div></a>
+                    </div>
+                    <div class="fotos-2">
+                        <a href=""><div class="foto-wrapper second-foto">
+                            
+                        </div></a>
+                    </div>
+                    <div class="fotos-3">
+                        <a href=""><div class="foto-wrapper third-foto">
+                            
+                        </div></a>
+                    </div>
+                     <div class="fotos-4">
+                        <a href=""><div class="foto-wrapper fourth-foto">
+                            
+                        </div></a>
+                    </div>
+                    <div class="fotos-5">
+                        <a href=""><div class="foto-wrapper fifth-foto">
+                            
+                        </div></a>
+                    </div>
+                    <div class="fotos-6">
+                        <a href=""><div class="foto-wrapper sixth-foto">
+                            
+                        </div></a>
+                    </div>
+                    <div class="fotos-7">
+                        <a href=""><div class="foto-wrapper seventh-foto">
+                            
+                        </div></a>
+                    </div>
+                </div>
+                <div class="bg-image"></div>
+                </div>
+      
+      
+  </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- Javascripts -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+        
+        let timeline1= new TimelineMax();
+        timeline1
+        .from('.intro-text',1.5, {
+              y:200,
+            ease:Power3.easeInOut
+            
+        }).from('.social ul li',1, {
+             delay:0.3,
+            opacity:0,
+              y:20,
+            ease:Expo.easeInOut,
+            
+        }).from('.left',1, {
+            delay:0.2,
+            opacity:0,
+            y:20,
+            ease:Expo.easeInOut,
+            
+        }).from('.box',2, {
+            delay:0.1,
+            opacity:0,
+            width:'0%',
+            ease:Power3.easeInOut,
+            
+        })
+        
+        
+        
+     const nav = document.getElementById('btn');
+     const home = document.getElementById('portfolio');
+        
+        nav.addEventListener('click', ()=>{
+            let timeline2 = new TimelineMax();
+            timeline2
+            .set('.grid', {
+                display:'grid'
+            })
+            .to('.forest img', 3, {
+                y:-400,
+                ease:Expo.easeInOut,
+            })
+            
+            .to('.bg-image', 3, {
+                y:-600,
+                ease:Expo.easeInOut,
+            }, '-=3')
+            .to('.reverse-btn', 2, {
+                display:'none',
+                autoAlpha:0,
+                ease:Power3.easeInOut,
+            }, '-=3')
+            .to('.reverse-display', 2, {
+                delay:1.4,
+                display:'block',
+                cursor:'pointer',
+                ease:Power3.easeInOut,
+            }, '-=3')
+            .to('.fotos', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=2')
+            .to('.fotos-2', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.8')
+            .to('.fotos-3', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.7')
+            .to('.fotos-4', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.6')
+            .to('.fotos-5', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.6')
+            .to('.fotos-6', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.6')
+            .to('.fotos-7', 2, {
+                height:'100%',
+                ease:Expo.easeInOut,
+            }, '-=1.6');
+            
+            home.addEventListener('click', ()=>{
+                timeline2.reverse();
+            })
+            
+            
+            
+            
+            
+     })    
+        
+        
+        
+        
+    })
+        
+      
+    
+    </script>
+
+    
+</body>
+</html>

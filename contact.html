@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blou HTML Responsive Vcard Template">
+    <meta name="keywords" content="personal, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+  
+    <nav>
+        <div class="left">
+            <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+        </div>
+        
+        <div class="right">
+          
+           <!-- mobile menu -->
+              <span class="navicon-homePage" onclick="openNav()">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+              </span>
+
+              <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+                  <div class="overlay-content">
+                      <a href="index.html">About</a>
+                      <a href="resume.html">Resume</a>
+                      <a href="portfolio.html">Portfolio</a>
+                      <a href="contact.html">Contact</a>
+                  </div>
+              </div>
+               <!--end - mobile menu -->
+            
+        </div>
+        
+    </nav>
+
+
+
+ <section class="contact">
+  <div class="landing">
+      <div class="contact-intro">
+          <h2>Contact Me</h2>
+          <p class="first-p mt-4">Ben üretici ve efektif web site tasarımları yapıyorum.</p>
+          <p class="second-p mt-4">Mail to:nacila.design@gmail.com</p>
+      </div>
+      
+      <div class="distortion"></div>
+  </div>
+   
+</section>
+   
+   
+   <!-- Javascripts -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+   <script src="js/hover.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+     document.addEventListener('DOMContentLoaded', ()=> {
+        
+        let timeline1= new TimelineMax();
+        timeline1
+        .from('.contact-intro',1.5, {
+            delay:0.3,
+            opacity:0,
+              y:20,
+            ease:Power3.easeInOut,
+            
+        }).from('.first-p',1, {
+             delay:0.3,
+            opacity:0,
+              y:20,
+            ease:Expo.easeInOut,
+            
+        }).from('.second-p',1.2, {
+             delay:0.3,
+            opacity:0,
+              y:20,
+            ease:Expo.easeInOut,
+            
+        }).from('.distortion',1.2, {
+             delay:0.3,
+            opacity:0,
+              y:20,
+            ease:Power3.easeInOut,
+            
+        })
+    })
+   </script>
+
+</body>
+</html>
