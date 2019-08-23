@@ -22,17 +22,10 @@ body{
     height: 100vh;
 }
 
-.home .logo{
-    width: 90%;
-    height: auto;
-    position: absolute;
-    
-}
-
 .home .social{
     position: absolute;
     right: 0px;
-    top: 10%;
+    top: 13%;
     display: block;
     color: #fff;
     font-family: 'Saira', sans-serif;
@@ -177,14 +170,14 @@ body{
 }
 
 .left {
-    width: 83px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
     margin: 25px 30px;
 }
 
 .left .logo{
-    width: 83px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
 }
 
 nav{
@@ -212,6 +205,7 @@ nav{
     width: 30px;
     display: block;
     margin: 2em 0 0 1em;
+    height: auto;
   
 }
 
@@ -422,7 +416,7 @@ nav{
 *****************/
 .contact{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #fff;
 }
 .landing{
@@ -450,6 +444,373 @@ nav{
 .contact-intro p{
     font-size: 25px;
 }
+
+.navicon-dark div{
+    height: 4px;
+    background-color: #000;
+    margin: 5px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+   
+    
+}
+/***************
+     2.RESUME
+*****************/
+.resume-body{
+    overflow-y: visible;
+}
+.resume-section{
+    width: 100%;
+    height: 100%;
+}
+
+.inclusive{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.resume-title{
+    color: #fff;
+    font-size: 60px;
+    position: relative;
+    top: 70%;
+    left: 30%;
+    font-weight: 600;
+}
+
+.resume-images{
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+}
+
+.resume-foto-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.resume-small-card{
+            position: absolute;
+            height: 100%;
+            overflow-x: hidden;
+            z-index: 0;
+            top: 15%;
+            left: 10%;
+            overflow-y: hidden;
+            color: #fff;
+    
+}
+
+
+.resume-section .download{
+    width: 100%;
+    height: 500px;
+    background: transparent;
+    text-align: center;
+    box-shadow: 0 0 10px #333;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 30px #333);
+    
+}
+
+.resume-section .download h3{
+    font-weight: 500;
+}
+
+.resume-section .download .part-2{
+    background: transparent;
+    position: relative;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.resume-section .download .part-2 a{
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 18px;
+    position: relative;
+    top: 35%;
+    padding: 10px;
+    background:#C0E3E7;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+
+.resume-section .download .part-2 a:hover{
+    text-decoration: none;
+    box-shadow: 0 1px 5px rgba(59, 43, 91, 0.7);
+
+}
+
+.resume-section .download img{
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.resume-section .download div ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.resume-section .download div ul li a{
+    color: #fff;
+}
+
+.resume-landing{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+      
+}
+
+.blur{
+    width: 120%;
+    margin-left: -10%;
+    height: 250px;
+    background-color: #030000;
+    position: absolute;
+    bottom: -180px;
+    filter: blur(40px);
+    z-index: 999;
+}
+
+
+
+.resume-section .col-lg-12 .talents{
+   width: 100%;
+    background: #000;
+    height: auto;
+    color: #fff;
+    
+}
+
+.resume-section .col-lg-12 .talents .entrance{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .entrance h5{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    
+}
+
+.resume-section .col-lg-12 .talents .entrance p{
+    font-size: 20px;
+    
+}
+
+.resume-section .col-lg-12 .talents .entrance button{
+    background: transparent;
+    border: 2px solid #e8e8e8;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    border-radius:30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.resume-section .col-lg-12 .talents .entrance button:active{
+    outline: none;
+    border: none;
+}
+
+.resume-section .col-lg-12 .talents .entrance button:focus{
+    outline:0;
+}
+
+.resume-section .col-lg-12 .talents .information{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .information .personal{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.resume-section .col-lg-12 .talents .information .row .col-lg-6 ul li{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.bg-circ {
+background: #fff !important;
+border: none !important;
+}
+
+.progress-bar-bg {
+background: #fff !important;
+
+}
+
+.resume-section .col-lg-12 .talents .information .row .col-lg-6 ul li strong{
+    display: block;
+}
+
+.resume-section .col-lg-12 .talents .information .row .col-lg-6 .english ul li{
+    display: inline-block;
+}
+
+.resume-section .col-lg-12 .talents .information .row .col-lg-6 .english ul li div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.langue{
+    font-size: 18px;
+}
+
+.langue-level{
+    margin-left: 10px;
+}
+
+.skill-title{
+    margin-bottom: 60px;
+}
+
+.resume-section .col-lg-12 .talents .skills{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .skills .col-lg-6 p{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.resume-section .col-lg-12 .talents .skills .col-lg-6 div p{
+    font-size: 18px;
+}
+
+.resume-section .col-lg-12 .talents .skills .col-lg-6 .progress{
+    height: 5px;
+    background: #6c757d;
+}
+
+svg path {
+  will-change: auto;
+  stroke-width: 7px;
+  stroke-miterlimit: round;
+  transition: stroke-dashoffset 850ms ease-in-out;
+}
+
+.resume-section .col-lg-12 .talents .skills .col-lg-6 .col-lg-4 span{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.resume-section .col-lg-12 .talents .skills .col-lg-6 .col-lg-4 p{
+    position: relative;
+    left: 18%;
+}
+
+.resume-section .col-lg-12 .talents .experience{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .experience h4{
+    color:#6c757d;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.resume-section .col-lg-12 .talents .experience ul li{
+    border-left: 2px solid #C0E3E7;
+    padding: 10px;
+}
+
+.resume-section .col-lg-12 .talents .experience .icon{
+background: #C0E3E7;
+height: 10px;
+text-align: center;
+transform:rotate(45deg);
+width:10px;
+margin: 10px 0px 10px 0px;
+position: relative;
+left: -4px;
+
+}
+
+.resume-section .col-lg-12 .talents .experience .timeline{
+    margin-top: 60px;
+}
+
+.resume-section .col-lg-12 .talents .experience .timeline .job{
+    font-size: 18px;
+}
+
+.resume-section .col-lg-12 .talents .experience .timeline .company{
+    color: #6c757d;
+}
+
+.resume-section .col-lg-12 .talents .experience .timeline .date{
+    color: #fff;
+    background: #6c757d;
+    display: inline-block;
+    padding: 5px 12px 5px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 1sn ease;
+}
+
+.resume-section .col-lg-12 .talents .experience .timeline .date:hover{
+    background: #000;
+}
+
+.resume-section .col-lg-12 .talents .education{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .references{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .references .ref-1 .col-lg-2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.resume-section .col-lg-12 .talents .references .ref-1 {
+    padding: 40px;
+}
+
+.resume-section .col-lg-12 .talents .interest{
+    padding: 5%;
+}
+
+.resume-section .col-lg-12 .talents .interest .col-lg-12 p i{
+    color:#C0E3E7; 
+    font-size: 25px;
+}
+
+.resume-section .col-lg-12 .talents .interest .col-lg-12 p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.resume-section .col-lg-12 .talents .interest .col-lg-12 p span{
+    margin-left: 10px;
+}
+
+
 
 
 
